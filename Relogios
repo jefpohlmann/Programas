@@ -1,0 +1,23 @@
+import java.time.LocalDateTime;
+
+public class Relogio {
+    private int id;
+    private String nome;
+    private String ip;
+    private String local;
+    private LocalDateTime dataCriacao;
+
+    public Relogio(int id, String nome, String ip, String local) {
+        this.id = id;
+        this.nome = nome;
+        this.ip = ip;
+        this.local = local;
+        this.dataCriacao = LocalDateTime.now();
+    }
+
+    // Getters
+    public int getId() { return id; }
+    public String getNome() { return nome; }
+    public String getIp() { return ip; }
+    public String getLocal() { return local; }
+}
